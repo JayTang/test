@@ -1,4 +1,4 @@
 language: cpp
 compiler: gcc
 script: make
-after_success: ./helloworld
+after_success: diff < (./helloworld) < output_00
